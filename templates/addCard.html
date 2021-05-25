@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Add Cards{% endblock %}
+
+{% block content %}
+	<h1>Add a New Card</h1>
+	<form method="POST">
+		<p>Question: <input type="text" name="question"></p>
+		<p>Answer: <input type="text" name="answer"></p>
+		<input type="submit" value="Create">
+		<a href="{{ url_for('welcome')}}">Home</a>
+	</form><br>
+	
+{% endblock %}

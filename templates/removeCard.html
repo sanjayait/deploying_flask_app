@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Remove Cards{% endblock %}
+
+{% block content %}
+	<h1>Remove Flask Card</h1>
+	Question: {{card.question}}<br>
+	Answer: {{card.answer}}<br>
+
+	<h2>Are You Sure?</h2>
+	<form method="post">
+		<button type="submit">Yes</button>
+		<a href="{{ url_for('welcome')}}">No</a>
+	</form>
+{% endblock %}
